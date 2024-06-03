@@ -1,0 +1,171 @@
+* {
+    font-family: "IBM Plex Sans";
+}
+
+body {
+    width: 1440px;
+}
+
+.title {
+    font-size: 48px;
+    color: #2873b4;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.organo {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.organo-title {
+    width: fit-content;
+    background-color: #3DB4D3;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    border-radius: 16px;
+    padding: 5px 55px;
+}
+
+.oficina-title {
+    color: #2873b4;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.titles {
+    display: flex;
+}
+
+.row-content {
+    margin-top: 20px;
+    display: flex;
+}
+
+.member-content {
+    width: 320px;
+    border-radius: 8px;
+    background-color: #F9F9F9;
+    padding-bottom: 7px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 40px;
+}
+
+.member-name {
+    font-weight: bold;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+.member-row {
+    width: 90%;
+    display: flex;
+    margin: 5px auto;
+    align-items: center;
+    color: #747474;
+}
+
+.member-row a {
+    margin-left: auto;
+    text-decoration: none;
+}
+
+.text {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.member-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: auto;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.member-button span {
+    margin: auto;
+}
+
+.resolucion {
+    color: #3DB4D3;
+}
+
+.resolucion:hover {
+    cursor: pointer;
+    background-color: #3DB4D3;
+    color: white;
+}
+
+.hoja-vida {
+    color: #FFC300;
+}
+
+.hoja-vida:hover {
+    cursor: pointer;
+    background-color: #FFC300;
+    color: white;
+}
+
+.entidad {
+    margin-bottom: 20px;
+    width: 320px;
+    margin-left: 50px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.contenedor-principal {
+    width: fit-content;
+    margin: auto;
+}
+
+@media screen and (max-device-width: 767px) {
+    body {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 60px;
+        margin: auto;
+    }
+
+    .contenedor {
+        display: block;
+    }
+
+    .contenedor-principal {
+        width: 100%;
+        margin: auto;
+    }
+
+    .entidad {
+        width: 90%;
+    }
+
+    .oficina-title {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .member-content {
+        width: 70%;
+        margin: 30px auto;
+    }
+
+    .member-name {
+        font-size: 40px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+}
