@@ -3,6 +3,7 @@ $(document).ready(function () {
     const designacionTooltip = "Resolución de designación";
     const ratificacionTooltip = "Resolución de ratificación";
     const encargaturaTooltip = "Resolución de encargatura";
+    const rectificacionTooltip = "Resolución de rectificación";
     const cvTooltip = "Hoja de Vida";
     const $tooltip = $('#tooltip');
 
@@ -48,6 +49,13 @@ $(document).ready(function () {
     $('.encargatura').on({
         mouseover: function (event) {
             showTooltip(event, encargaturaTooltip);
+        },
+        mouseout: hideTooltip
+    });
+
+    $('.rectificacion').on({
+        mouseover: function (event) {
+            showTooltip(event, rectificacionTooltip);
         },
         mouseout: hideTooltip
     });

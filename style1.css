@@ -8,7 +8,6 @@ body {
   width: 100vw;
   height: 100vh;
   max-width: 1440px;
-  border: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -77,6 +76,7 @@ body.dark-active {
   .ratificacion,
   .encargatura,
   .designacion,
+  .rectificacion,
   .cv {
     padding: 4px;
   }
@@ -91,8 +91,8 @@ body.dark-active {
     border-radius: 100%;
   }
 
-  .designacion:hover {
-    background-color: #2873b41a;
+  .rectificacion:hover {
+    background-color: #AD14571a;
     border-radius: 100%;
   }
 
@@ -123,6 +123,19 @@ body.dark-active {
     border-radius: 1rem;
   }
 
+  .departmentTitle {
+    font-size: clamp(1rem, -0.25rem + 4vw, 2rem);
+    font-weight: 600;
+    color: white;
+    width: fit-content;
+    text-align: start;
+    padding-inline: 1.25rem;
+    padding-block: 0.25rem;
+    margin-block: 3rem;
+    border-radius: 0.5rem;
+    background-color: #3db4d3;
+  }
+
   .offices {
     display: grid;
     grid-auto-rows: 1fr;
@@ -138,7 +151,7 @@ body.dark-active {
     .office {
       display: flex;
       gap: 0.25rem;
-      place-content: start;
+      place-content: center;
       width: 100%;
       flex-direction: column;
 
@@ -170,6 +183,10 @@ body.dark-active {
           font-weight: 600;
         }
 
+        .shortName {
+          font-size: clamp(0.5rem, -0.0469rem + 1.75vw, 0.9375rem) !important;
+        }
+
         .personInfo {
           display: grid;
           gap: clamp(0rem, -0.625rem + 2vw, 0.5rem);
@@ -179,6 +196,7 @@ body.dark-active {
             justify-content: space-between;
             align-items: center;
             gap: 0.5rem;
+            height: 24px;
             /* padding-block: 0.5rem; */
 
             .groupText {
