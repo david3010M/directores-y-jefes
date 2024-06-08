@@ -91,8 +91,13 @@ body.dark-active {
     border-radius: 100%;
   }
 
+  .designacion:hover {
+    background-color: #2873b41a;
+    border-radius: 100%;
+  }
+
   .rectificacion:hover {
-    background-color: #AD14571a;
+    background-color: #ad14571a;
     border-radius: 100%;
   }
 
@@ -131,7 +136,8 @@ body.dark-active {
     text-align: start;
     padding-inline: 1.25rem;
     padding-block: 0.25rem;
-    margin-block: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     border-radius: 0.5rem;
     background-color: #3db4d3;
   }
@@ -211,7 +217,7 @@ body.dark-active {
               }
 
               .mail {
-                max-width: clamp(8.75rem, -1.4063rem + 32.5vw, 16.875rem);
+                max-width: clamp(8.75rem, 1.3281rem + 23.75vw, 14.6875rem);
               }
 
               .text {
