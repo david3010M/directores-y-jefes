@@ -1,4 +1,41 @@
 $(document).ready(function () {
+
+    const handleOfficeSelect = (index) => {
+        $(".itemOfficeNav").removeClass("active");
+        $(`.itemOfficeNav[data-index=${index}]`).addClass("active");
+    };
+
+    const handleShowOffice = (index) => {
+        $(".offices").addClass("none");
+        console.log($(`.offices[data-index=${index}]`));
+        $(`.offices[data-index=${index}]`).removeClass("none");
+    };
+
+    const handleOfficeName = (index) => {
+        $(".officeTitle").addClass("none");
+        $(`.officeTitle[data-index=${index}]`).removeClass("none");
+    }
+
+    $(".itemOfficeNav").on("click", function () {
+        const index = $(this).data("index");
+        console.log(index);
+        handleOfficeSelect(index);
+        handleShowOffice(index);
+        handleOfficeName(index);
+    });
+
+    handleOfficeSelect(1);
+    handleShowOffice(1);
+    handleOfficeName(1);
+
+
+
+
+
+
+
+
+
     // designacion ratificacion encargatura
     const designacionTooltip = "Resolución de designación";
     const ratificacionTooltip = "Resolución de ratificación";
