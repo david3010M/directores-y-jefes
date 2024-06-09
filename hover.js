@@ -16,17 +16,24 @@ $(document).ready(function () {
         $(`.officeTitle[data-index=${index}]`).removeClass("none");
     }
 
+    const handleSeparator = (index) => {
+        $(".separator").addClass("none");
+        $(`.separator[data-index=${index}]`).removeClass("none");
+    }
+
     $(".itemOfficeNav").on("click", function () {
         const index = $(this).data("index");
         console.log(index);
         handleOfficeSelect(index);
         handleShowOffice(index);
         handleOfficeName(index);
+        handleSeparator(index);
     });
 
     handleOfficeSelect(1);
     handleShowOffice(1);
     handleOfficeName(1);
+    handleSeparator(1);
 
 
 
