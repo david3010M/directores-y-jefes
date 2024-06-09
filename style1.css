@@ -82,7 +82,8 @@ body.dark-active {
   display: none !important;
 }
 
-.directionBoss {
+.directionBoss,
+.otherAuthorities {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -175,6 +176,7 @@ body.dark-active {
   .encargatura,
   .designacion,
   .rectificacion,
+  .prorroga,
   .cv {
     padding: clamp(0.125rem, -0.0313rem + 0.5vw, 0.25rem);
   }
@@ -182,7 +184,8 @@ body.dark-active {
   .ratificacion:hover,
   .encargatura:hover,
   .designacion:hover,
-  .rectificacion:hover {
+  .rectificacion:hover,
+  .prorroga:hover {
     background-color: #2873b41a;
     border-radius: 100%;
   }
@@ -218,7 +221,8 @@ body.dark-active {
     background-color: #3db4d3;
   }
 
-  .officeTitle {
+  .officeTitle,
+  .otherOfficeTitle {
     font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
     font-weight: bold;
     color: #2873b4;
@@ -226,6 +230,7 @@ body.dark-active {
     padding-left: 1.5rem;
   }
 
+  .otherSeparator,
   .separator {
     height: 1px;
     background-color: #e4e4e7;
@@ -233,7 +238,12 @@ body.dark-active {
     margin-block: 1rem;
   }
 
-  .offices {
+  .otherSeparator {
+    margin-top: 2rem;
+  }
+
+  .offices,
+  .otherOffices {
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fill, minmax(min(24rem, 46%), 1fr));
