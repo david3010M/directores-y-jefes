@@ -1,0 +1,329 @@
+@import url("fonts/LibreFranklin/LibreFranklin.css");
+
+* {
+  font-family: "Libre Franklin";
+}
+
+body {
+  border: 1px solid red;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+body.dark-active {
+  .otherOfficeTitle {
+    color: #e5eff9 !important;
+  }
+
+  .personName {
+    color: white !important;
+  }
+
+  .groupText {
+    color: white !important;
+  }
+
+  .sidebar {
+    border-bottom-color: #1f2937;
+    background-color: #0f172a;
+  }
+
+  .itemOfficeNav:hover,
+  .itemOfficeNav:focus {
+    background-color: #1f2937;
+  }
+
+  .itemOfficeNav.active {
+    background-color: #1f2937;
+  }
+}
+
+#tooltip {
+  position: absolute;
+  display: none;
+  background-color: #747474;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+  z-index: 1000;
+  font-size: clamp(0.5rem, 0.1875rem + 1vw, 0.75rem);
+}
+
+@media (max-width: 640px) {
+  .otherAuthorities .groupText img {
+    display: none;
+  }
+
+  .otherAuthorities .otherOfficeTitle {
+    max-width: 320px;
+  }
+
+  .grid2,
+  .grid3,
+  .grid4 {
+    grid-column: auto !important;
+  }
+
+  .otherAuthorities .titleNone {
+    display: none;
+  }
+
+  .otherAuthorities .sidebar {
+    justify-content: start !important;
+  }
+}
+
+.none {
+  display: none !important;
+}
+
+.otherAuthorities {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .sidebar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-block: 1rem;
+
+    .items {
+      display: flex;
+      column-gap: 0.5rem;
+      box-sizing: border-box;
+      width: fit-content;
+      background-color: #f3f4f6;
+      margin-inline: 1rem;
+      padding-inline: 1rem;
+      border-radius: 0.5rem;
+
+      overflow-x: scroll;
+    }
+
+    .items::-webkit-scrollbar {
+      display: none;
+    }
+
+    .itemOfficeNav {
+      border: 0;
+      display: flex;
+      padding-inline: 1rem;
+      padding-block: clamp(0.25rem, -0.0625rem + 1vw, 0.5rem);
+      margin-block: 0.25rem;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5rem;
+      background-color: transparent;
+      color: #6b7280;
+      font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
+      line-height: 1.25rem;
+      font-weight: 500;
+      transition-property: color, background-color, border-color,
+        text-decoration-color, fill, stroke;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 300ms;
+
+      white-space: nowrap;
+    }
+
+    .itemOfficeNav.active {
+      background-color: #2873b4 !important;
+      color: #f3f7fc !important;
+    }
+
+    .itemOfficeNav:hover,
+    .itemOfficeNav:focus {
+      background-color: #c6ddf1;
+      color: #3484c3;
+      cursor: pointer;
+    }
+  }
+
+  .title {
+    font-size: clamp(1.25rem, -0.3125rem + 5vw, 2.5rem);
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    padding-inline: 0.5rem;
+    padding-block: clamp(0.625rem, 0.1563rem + 1.5vw, 1rem);
+    margin-bottom: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+    box-sizing: border-box;
+    background-color: #2873b4;
+    border-radius: 1rem;
+  }
+
+  .grid4 {
+    grid-column: span 4;
+  }
+
+  .grid3 {
+    grid-column: span 3;
+  }
+
+  .grid2 {
+    grid-column: span 2;
+  }
+
+  .ratificacion,
+  .encargatura,
+  .designacion,
+  .rectificacion,
+  .cv {
+    padding: clamp(0.125rem, -0.0313rem + 0.5vw, 0.25rem);
+  }
+
+  .ratificacion:hover,
+  .encargatura:hover,
+  .designacion:hover,
+  .rectificacion:hover {
+    background-color: #2873b41a;
+    border-radius: 100%;
+  }
+
+  .cv:hover {
+    background-color: #ffc3001a;
+    border-radius: 100%;
+  }
+
+  .boss {
+    background-color: #e5eff97f !important;
+  }
+
+  .boss .text {
+    color: #13283e !important;
+  }
+
+  .boss .personName {
+    color: #13283e !important;
+  }
+
+  .departmentTitle {
+    font-size: clamp(1rem, -0.25rem + 4vw, 2rem);
+    font-weight: 600;
+    color: white;
+    width: fit-content;
+    text-align: start;
+    padding-inline: 1.25rem;
+    padding-block: 0.25rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    background-color: #3db4d3;
+  }
+
+  .otherOfficeTitle {
+    font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+    font-weight: bold;
+    color: #2873b4;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+
+  .otherSeparator {
+    height: 1px;
+    background-color: #e4e4e7;
+    margin-inline: 1.5rem;
+    margin-block: 1rem;
+  }
+
+  .otherOffices {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(min(24rem, 46%), 1fr));
+    gap: 3rem;
+    row-gap: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+    align-items: stretch;
+    justify-content: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    padding-inline: 1.5rem;
+
+    .office {
+      display: flex;
+      gap: 0.25rem;
+      place-content: center;
+      width: 100%;
+      flex-direction: column;
+
+      .officeContent {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        background-color: transparent;
+        border-radius: 0.5rem;
+        display: flex;
+        gap: clamp(0.375rem, -0.4063rem + 2.5vw, 1rem);
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        flex-direction: column;
+
+        .personName {
+          font-size: clamp(0.75rem, 0.4375rem + 1vw, 1rem);
+          font-weight: 600;
+        }
+
+        .shortName {
+          font-size: clamp(0.5rem, -0.0469rem + 1.75vw, 0.9375rem) !important;
+        }
+
+        .personInfo {
+          display: grid;
+          grid-auto-rows: 1fr;
+          gap: clamp(0rem, -0.625rem + 2vw, 0.5rem);
+
+          .rowInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0.5rem;
+
+            .groupText {
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              gap: 0.5rem;
+              img {
+                height: auto;
+                margin: 0.25rem;
+              }
+
+              .mail {
+                max-width: clamp(8.75rem, 1.3281rem + 23.75vw, 14.6875rem);
+              }
+
+              .text {
+                font-size: clamp(0.625rem, 0.3125rem + 1vw, 0.875rem);
+                color: #747474;
+                font-weight: 400;
+              }
+            }
+
+            .groupLink {
+              display: flex;
+
+              .link {
+                display: flex;
+              }
+
+              .link img {
+                width: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+                height: auto;
+              }
+
+              .link div {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

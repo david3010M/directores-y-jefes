@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("LibreFranklin-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 500;
+  src: url("LibreFranklin-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: normal;
+  src: url("LibreFranklin-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: 500;
+  src: url("LibreFranklin-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 600;
+  src: url("LibreFranklin-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: bold;
+  src: url("LibreFranklin-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: bold;
+  src: url("LibreFranklin-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: 500;
+  src: url("LibreFranklin-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: 600;
+  src: url("LibreFranklin-SemiBoldItalic.ttfs") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: bolder;
+  src: url("LibreFranklin-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: bolder;
+  src: url("LibreFranklin-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 400;
+  src: url("LibreFranklin-Light.ttf") format("truetype");
+}
