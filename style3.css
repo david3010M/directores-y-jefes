@@ -1,0 +1,84 @@
+.primary-content.correo-institucional {
+  width: 100%;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  height: 100%;
+}
+
+body.dark-active .correo-institucional .content {
+  border: 2px solid #e5eff9;
+}
+
+.correo-institucional .content {
+  max-width: 100%;
+  width: 100%;
+  border: 2px solid #2873b4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 4rem;
+}
+
+.correo-institucional .image {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.correo-institucional .image img {
+  min-height: 160px;
+  max-height: 160px;
+}
+
+body.dark-active .correo-institucional .text {
+  color: #e5eff9;
+}
+
+.correo-institucional .text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2873b4;
+}
+
+.correo-institucional .text2 {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1.5rem;
+  gap: 0.5rem;
+}
+
+.correo-institucional .content2 {
+  justify-content: left;
+  width: 100%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.correo-institucional .icon {
+  vertical-align: middle;
+}
+
+.correo-institucional .icon img {
+  filter: invert(36%) sepia(64%) saturate(405%) hue-rotate(165deg)
+    brightness(90%) contrast(100%);
+  width: 24px;
+  min-width: 24px;
+  max-width: 24px;
+}
+
+.correo-institucional .text_icon {
+  margin-left: 5px;
+  text-align: left;
+}
+
+.correo-institucional .text_icon .primary {
+  color: #2873b4;
+  font-weight: bold;
+}

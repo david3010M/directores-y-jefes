@@ -63,6 +63,7 @@ $(document).ready(function () {
         const leftPosition = offset.left + (width / 2) - (tooltipWidth / 2);
 
         // Ajusta la posición del tooltip para que esté debajo y centrado del elemento
+        console.log($tooltip)
         $tooltip.text(text)
             .css({
                 display: 'block',
